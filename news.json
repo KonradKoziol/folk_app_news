@@ -71,6 +71,19 @@
             "date": "15.09.2018"
         }
     ],
-    "trips" :[],
-    "association" :{}
+    "pastTrips": [
+        {
+            "country": "pt",
+            "city": "Viana do Castelo",
+            "festivalName": "Festival de Folclore Internacional Alto Minho",
+            "year": 2018
+        },
+        {
+            "country": "fr",
+            "city": "Alençon",
+            "festivalName": "Festival de Folklore du Monde",
+            "year": 2018
+        }
+    ],
+    "association": {}
 }
