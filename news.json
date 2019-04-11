@@ -83,6 +83,24 @@
             "city": "Alençon",
             "festivalName": "Festival de Folklore du Monde",
             "year": 2018
+        },
+        {
+            "country": "ru",
+            "city": "Timișoara",
+            "festivalName": "Festivalul Inimilor",
+            "year": 2017
+        },
+        {
+            "country": "pl",
+            "city": "Wisła",
+            "festivalName": "Tydzień Kultury Beskidzkiej",
+            "year": 2016
+        },
+        {
+            "country": "pt",
+            "city": "Batalha",
+            "festivalName": "",
+            "year": 2015
         }
     ],
     "association": {}
