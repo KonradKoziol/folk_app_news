@@ -140,8 +140,32 @@
             }
         ]
     },
+    "videos": [
+        {
+            "grpName": "Nasze układy",
+            "ytIdList": [
+                "MwJ5KqZrBj4",
+                "zmb7fBWR7gw"
+            ]
+        },
+        {
+            "grpName": "Nasze piosenki",
+            "ytIdList": [
+                "Q2BNi8zzEYQ",
+                "CfG1RR99VTQ"
+            ]
+        },
+        {
+            "grpName": "PolArt 2006 - Festiwal Polonijny w Australii",
+            "ytIdList": [
+                "kcMZ23L96No",
+                "4EXOAgImR4s",
+                "_KaFkWKsTXI"
+            ]
+        }
+    ],
     "CTA": {
-        "btnName":"Call to Action",
+        "btnName": "Call to Action",
         "url": "http://www.zespol.wroc.pl/"
     }
 }
