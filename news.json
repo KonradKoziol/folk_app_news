@@ -71,6 +71,7 @@
             "date": "15.09.2018"
         }
     ],
+    "plannedTripsInfo": "...na razie niech pozostaną tajemnicą, ale na pewno będzie ciekawie!",
     "pastTrips": [
         {
             "country": "pt",
@@ -103,5 +104,40 @@
             "year": 2015
         }
     ],
-    "association": {}
+    "association": {
+        "lastGenMeeting": "12.10.2018r.",
+        "upcomingGenMeeting": "-------------------",
+        "managament": [
+            {
+                "fullName": "Katarzyna Nowak",
+                "role": "Prezes Zarządu",
+                "contact": "+48 602 725 084, +48 697 667 327",
+                "areaOfResps": ""
+            },
+            {
+                "fullName": "Magdalena Młodzianowska-Chilmon",
+                "role": "Skarbnik",
+                "contact": "",
+                "areaOfResps": ""
+            },
+            {
+                "fullName": "Agnieszka Rucka",
+                "role": "Sekretarz",
+                "contact": "",
+                "areaOfResps": ""
+            },
+            {
+                "fullName": "Maria Czajkowska",
+                "role": "Członek Zarządu",
+                "contact": "",
+                "areaOfResps": ""
+            },
+            {
+                "fullName": "Jagienka Świetlik-Prus",
+                "role": "Członek Zarządu",
+                "contact": "",
+                "areaOfResps": ""
+            }
+        ]
+    }
 }
