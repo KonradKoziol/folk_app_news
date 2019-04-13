@@ -3,7 +3,11 @@
         {
             "header": "\"Wielkanocne warsztaty na ludowo..\" - kolejna educja bezpłatnych sobotnich spotkań",
             "description": "Fajno będzie i w ogóle.",
-            "date": "27.03.2019"
+            "date": "27.03.2019",
+            "image": {
+                "url": "http://zespol.wroc.pl/images/stories/Artykuly/kartka_%C5%9Bwi%C4%85teczna.jpg",
+                "link": "http://zespol.wroc.pl/images/stories/Artykuly/kartka_%C5%9Bwi%C4%85teczna.jpg"
+            }
         },
         {
             "header": "Lorem ipsum dolor sit amet",
@@ -18,7 +22,11 @@
         {
             "header": "Świąteczne życzenia od Zespołu \"Wrocław\"!",
             "description": "Drodzy Członkowie, Rodzice, Sympatycy i Przyjaciele Zespołu! \nPragniemy złożyć Wam najserdeczniejsze życzenia z okazji nadchodzących Świąt Bożego Narodzenia! Obyście przeżyli je w zdrowiu, spokoju, w dobrej, rodzinnej atmosferze. Niech świąteczna krzątanina będzie okazją do wspólnego spędzenia czasu i dzielenia się tym, co w naszych różnorodnych tradycjach najpiękniejsze! Dziękujemy Wam, że jesteście i razem z nami tworzycie ogromną rodzinę Zespołu \"Wrocław\"! A na nadchodzący Nowy Rok pragniemy życzyć Wam wszelkiej pomyślności, uśmiechu na co dzień, a także wytrwałości w dążeniu do postawionych sobie celów. Do siego roku! Ze świątecznymi pozdrowieniami, Zarząd RDZPiT \"Wrocław\"",
-            "date": "22.12.2018"
+            "date": "22.12.2018",
+            "image": {
+                "url": "http://zespol.wroc.pl/images/stories/Artykuly/kartka_%C5%9Bwi%C4%85teczna.jpg",
+                "link": ""
+            }
         },
         {
             "header": "\"Już kolęda płynie z cicha..\" - Mikołajkowy koncert galowy!",
