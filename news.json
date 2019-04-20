@@ -175,6 +175,23 @@
             ]
         }
     ],
+    "galleryImages":[
+        {
+            "grpName": "Warsztaty tradycyjne - \"Powrót do korzeni - muzyka, taniec, śpiew, polskie tradycje ludowe. II edycja\"",
+            "imagesUrlsList": [
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/powrot_do_korzeni_warsztaty8_20190209_1899489964.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/powrot_do_korzeni_warsztaty7_20190209_1502447523.jpg"
+            ]
+        },
+        {
+            "grpName": "Poznaj foklor, czyli warsztaty na ludowo",
+            "imagesUrlsList": [
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/warsztaty_tradycyjne_w_obornikach1_20190129_2029365070.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/warsztaty_tradycyjne_w_obornikach2_20190129_1173763087.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/warsztaty_tradycyjne_w_obornikach3_20190129_1963831074.jpg"
+            ]
+        }
+    ],
     "CTA": {
         "btnName": "Call to Action",
         "url": "http://www.zespol.wroc.pl/"
