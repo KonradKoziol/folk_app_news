@@ -175,9 +175,10 @@
             ]
         }
     ],
-    "galleryImages":[
+    "galleryImages": [
         {
             "grpName": "Warsztaty tradycyjne - \"Powrót do korzeni - muzyka, taniec, śpiew, polskie tradycje ludowe. II edycja\"",
+            "grpDescription": "Tak bawiliśmy się podczas bezpłatnych weekendowych warsztatów tradycyjnych w ramach projektu \"Powrót do korzeni - muzyka, taniec, śpiew i polskie tradycje ludowe. II edycja\" współfinansowanych ze środków Gminy Wrocław.",
             "imagesUrlsList": [
                 "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/powrot_do_korzeni_warsztaty8_20190209_1899489964.jpg",
                 "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/powrot_do_korzeni_warsztaty7_20190209_1502447523.jpg"
