@@ -49,7 +49,7 @@
         });
         // $("#news").append('<input type="text" class="form-control" value="' + element.date + '">');
         $("#news").append('<label>' + 'Header' + ':</label>');
-        $("#news").append('<input type="text" class="form-control" value="' + element.header + '">');
+        $("#news").append('<input type="text" class="form-control" value="' + returnReplacedEscapedQuotes(element.header) + '">');
         $("#news").append('<label>' + 'Description' + ':</label>');
         $("#news").append('<textarea class="form-control" rows="5">' + element.description + '</textarea>');
         $("#news").append('<label>' + 'Image' + ':</label>' + concatenateNewsImage(element.image));
@@ -71,8 +71,8 @@
       return dd + '.' + mm + '.' + yyyy;
     };
 
-    var returnRemovedEscapedQuotes = (text) => {
-      // return text.replace(/blue/g, "red");
+    var returnReplacedEscapedQuotes = (text) => {
+      return text.replace(/\"/g, "&quot;");
     };
 
     var concatenateNewsImage = (image) => {
