@@ -41,6 +41,9 @@
   <script src="js/bootstrap.min.js"></script>
 
   <script type="text/javascript">
+    const IMAGE_SEPARATOR = '; ';
+
+
     $("#upload").click(() => {
       var inputJson = JSON.parse($("textarea#inputJson").val());
       console.log(inputJson);
@@ -51,7 +54,7 @@
       var inputJson = JSON.parse($("textarea#inputJson").val());
       console.log(inputJson);
       drawData(inputJson);
-      $("#outputJson").val(JSON.stringify(inputJson));
+      $("#outputJson").val(JSON.stringify(inputJson, null, 4));
       console.log($("#news").children());
     });
 
@@ -71,7 +74,9 @@
         $("#singleNews" + index).append('<input id="header' + index + '" type="text" class="form-control" value="' + returnReplacedEscapedQuotes(element.header) + '">');
         $("#singleNews" + index).append('<label>' + 'Description' + ':</label>');
         $("#singleNews" + index).append('<textarea id="description' + index + '" class="form-control" rows="5">' + element.description + '</textarea>');
-        $("#singleNews" + index).append('<label>' + 'Image' + ':</label>' + concatenateNewsImage(element.image, index));
+        element.image = formImage(element.image);
+        $("#singleNews" + index).append('<label>' + 'Image: URL(separator:\"' + IMAGE_SEPARATOR + '\")LINK' +
+           ':</label><input type="text" class="form-control" value="' + concatenateImage(element.image) + '">');
 
       });
 
@@ -83,6 +88,13 @@
 
     var buildImageAddBtn = (index) => {
       return '<button id="imageAdd' + index + '" type="button" class="btn btn-success btn-xs">+</button>'
+    };
+
+    var concatenateImage = (image) => {
+      if (!image.link) {
+        return image.url;
+      }
+      return image.link + IMAGE_SEPARATOR + image.url;
     };
 
     var getCurrentDate = () => {
@@ -98,18 +110,16 @@
       return text.replace(/\"/g, "&quot;");
     };
 
-    var concatenateNewsImage = (image, index) => {
+    var formImage = (image) => {
       if (!image) {
         image = {};
         image.url = '';
         image.link = '';
       }
-      var toReturn = '';
-      toReturn += '<div id="imageDetails' + index + '" class="panel panel-default panel-body">';
-      toReturn += '<label>' + 'URL' + ':</label><input type="text" class="form-control" value="' + image.url + '">';
-      toReturn += '<label>' + 'Link' + ':</label><input type="text" class="form-control" value="' + image.link + '">';
-      toReturn += '</div>';
-      return toReturn;
+      if (!image.link) {
+        image.link = '';
+      }
+      return image;
     };
   </script>
 </body>
