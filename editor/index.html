@@ -43,7 +43,6 @@
   <script type="text/javascript">
     const IMAGE_SEPARATOR = '; ';
 
-
     $("#upload").click(() => {
       var inputJson = JSON.parse($("textarea#inputJson").val());
       console.log(inputJson);
@@ -53,13 +52,10 @@
     $("#convert").click(() => {
       var outputJson = JSON.parse($("textarea#inputJson").val());
       const arrayList = $("#news > div.panel > div.panel-body").get();
-
       $("#news > div.panel > div.panel-body").get().forEach((elem, index) => {
         outputJson.news[index] = getSingleNewsObj($(elem).find("input, textarea"), index);
       });
-
       console.log(outputJson);
-
       $("#outputJson").val(JSON.stringify(outputJson, null, 4));
     });
 
@@ -79,7 +75,6 @@
         }
       }
       return toReturn;
-      // console.log(toReturn);
     };
 
     var drawData = (input) => {
@@ -93,21 +88,15 @@
         $("#getCurrentDateClick" + index).click(() => {
           $("#date" + index).val(getCurrentDate());
         });
-        // $("#news").append('<input type="text" class="form-control" value="' + element.date + '">');
         $("#singleNews" + index).append('<label>' + 'Header' + ':</label>');
         $("#singleNews" + index).append('<input id="header' + index + '" type="text" class="form-control" value="' + returnReplacedEscapedQuotes(element.header) + '">');
         $("#singleNews" + index).append('<label>' + 'Description' + ':</label>');
         $("#singleNews" + index).append('<textarea id="description' + index + '" class="form-control" rows="5">' + element.description + '</textarea>');
         element.image = formImage(element.image);
-        $("#singleNews" + index).append('<label>' + 'Image: URL(separator:\"' + IMAGE_SEPARATOR + '\")LINK' +
-          ':</label><input id="image' + index + '" type="text" class="form-control" value="' + concatenateImage(element.image) + '">');
+        $("#singleNews" + index).append('<label>' + 'Image: URL' + IMAGE_SEPARATOR + 'LINK' + ' (separator:[' + IMAGE_SEPARATOR + '])' +
+          '</label><input id="image' + index + '" type="text" class="form-control" value="' + concatenateImage(element.image) + '">');
 
       });
-
-      // Object.keys(input).forEach(function (item) {
-      //   $("#appendedData").append('<label for="usr">' + item + ':</label><input type="text" class="form-control"></div>');
-      //   console.log(inputJson[item]); // value
-      // });
     };
 
     var buildImageAddBtn = (index) => {
