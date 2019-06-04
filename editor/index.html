@@ -55,15 +55,15 @@
       console.log(inputJson);
       drawData(inputJson);
       $("#outputJson").val(JSON.stringify(inputJson, null, 4));
-      console.log($("#news").children());
+      console.log($("#news > div.panel > div.panel-body").get());
     });
 
     var drawData = (input) => {
       $("#appendedData").remove();
       $("#drownData").append('<div id="appendedData"></div>');
-      $("#appendedData").append('<label>' + 'News' + ':</label><div id="news" class="col-md-12"></div>');
+      $("#appendedData").append('<label>' + 'News' + ':</label><div id="news" class="col-md-12"><button class="col-md-12 btn btn-success">Add new +</button><hr></div>');
       input['news'].forEach((element, index) => {
-        $("#news").append('<div id="singleNews' + index + '" class="panel panel-default panel-body">');
+        $("#news").append('<div class="panel panel-default"><div class="panel-header"><span class="badge">' + index + '</span></div><div id="singleNews' + index + '" class="panel-body"></div></div>');
         $("#singleNews" + index).append('<label>' + 'Date' + ':</label>');
         $("#singleNews" + index).append('<div class="input-group"><input id="date' + index + '" type="text" class="form-control" value="' + element.date + '"><span class="input-group-btn"><button id="getCurrentDateClick' + index + '" class="btn btn-default" type="button">Get current date</button></span></div>');
         $("#getCurrentDateClick" + index).click(() => {
@@ -76,7 +76,7 @@
         $("#singleNews" + index).append('<textarea id="description' + index + '" class="form-control" rows="5">' + element.description + '</textarea>');
         element.image = formImage(element.image);
         $("#singleNews" + index).append('<label>' + 'Image: URL(separator:\"' + IMAGE_SEPARATOR + '\")LINK' +
-           ':</label><input type="text" class="form-control" value="' + concatenateImage(element.image) + '">');
+          ':</label><input type="text" class="form-control" value="' + concatenateImage(element.image) + '">');
 
       });
 
