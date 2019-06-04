@@ -53,10 +53,30 @@
     $("#convert").click(() => {
       var inputJson = JSON.parse($("textarea#inputJson").val());
       console.log(inputJson);
-      drawData(inputJson);
+
       $("#outputJson").val(JSON.stringify(inputJson, null, 4));
-      console.log($("#news > div.panel > div.panel-body").get());
+      // console.log($($("#news > div.panel > div.panel-body").get(0)).find("input, textarea"));
+
+      getSingleNewsObj($($("#news > div.panel > div.panel-body").get(0)).find("input, textarea"), 0);
     });
+
+    var getSingleNewsObj = (elems, index) => {
+      var toReturn = {};
+      //TODO: Consider using selectors istead of indexes
+      toReturn.date = $(elems[0]).val();
+      toReturn.header = $(elems[1]).val();
+      toReturn.description = $(elems[2]).val().replace(/(?:\r\n|\r|\n)/g, '\\n');
+
+      if ($(elems[3]).val()) {
+        toReturn.image = {};
+        var unconcatImage = $(elems[3]).val().split(IMAGE_SEPARATOR);
+        toReturn.image.url = unconcatImage[0];
+        if(unconcatImage[1]){
+          toReturn.image.link = unconcatImage[1];
+        }
+      }
+      console.log(toReturn);
+    };
 
     var drawData = (input) => {
       $("#appendedData").remove();
@@ -76,7 +96,7 @@
         $("#singleNews" + index).append('<textarea id="description' + index + '" class="form-control" rows="5">' + element.description + '</textarea>');
         element.image = formImage(element.image);
         $("#singleNews" + index).append('<label>' + 'Image: URL(separator:\"' + IMAGE_SEPARATOR + '\")LINK' +
-          ':</label><input type="text" class="form-control" value="' + concatenateImage(element.image) + '">');
+          ':</label><input id="image' + index + '" type="text" class="form-control" value="' + concatenateImage(element.image) + '">');
 
       });
 
