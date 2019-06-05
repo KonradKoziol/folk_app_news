@@ -29,7 +29,7 @@
         </div>
       </div>
     </div>
-    <button type="button" id="upload" class="btn btn-primary">⬇</button>
+    <button type="button" id="upload" class="btn btn-primary disabled">⬇</button>
     <button type="button" id="convert" class="btn btn-primary" style="float: right">⬆</button>
     <hr>
     <label>News:</label>
@@ -44,6 +44,15 @@
 
   <script type="text/javascript">
     const IMAGE_SEPARATOR = '; ';
+
+    $("#inputJson").on('input', () => {
+      if (!$("#inputJson").val()) {
+        $("#upload").addClass('disabled');
+      }
+      else {
+        $("#upload").removeClass('disabled');
+      }
+    });
 
     $("#upload").click(() => {
       var inputJson = JSON.parse($("textarea#inputJson").val());
@@ -68,7 +77,7 @@
       $("#outputJson").val(JSON.stringify(getDrawnData(), null, 4));
     });
 
-    var formClearJson = ()=>{
+    var formClearJson = () => {
       var toReturn = {};
       toReturn.news = [];
       return toReturn;
@@ -77,9 +86,11 @@
     var getDrawnData = () => {
       var outputJson = $("textarea#inputJson").val() ? JSON.parse($("textarea#inputJson").val()) : formClearJson();
       const arrayList = $("#news > div.panel > div.panel-body").get();
+      var newNewsList = [];
       $("#news > div.panel > div.panel-body").get().forEach((elem, index) => {
-        outputJson.news[index] = getSingleNewsObj($(elem).find("input, textarea"), index);
+        newNewsList.push(getSingleNewsObj($(elem).find("input, textarea"), index))
       });
+      outputJson.news = newNewsList;
       console.log(outputJson);
       return outputJson;
     };
@@ -107,7 +118,14 @@
       $("#drownData").append('<div id="appendedData"></div>');
       $("#appendedData").append('<div id="news" class="col-md-12"><hr></div>');
       input['news'].forEach((element, index) => {
-        $("#news").append('<div class="panel panel-default"><div class="panel-header"><span class="badge">' + index + '</span></div><div id="singleNews' + index + '" class="panel-body"></div></div>');
+        $("#news").append('<div class="panel panel-default"><div class="panel-header">' +
+          '<span class="badge">' + index + '</span>' +
+          '<button id="btnRemoveElem' + index + '" class="btn btn-xs btn-danger" style="float: right">X</button>' +
+          '</div><div id="singleNews' + index + '" class="panel-body"></div></div>');
+        $("#btnRemoveElem" + index).click(() => {
+          input.news.splice(index, 1);
+          drawData(input);
+        });
         $("#singleNews" + index).append('<label>' + 'Date' + ':</label>');
         $("#singleNews" + index).append('<div class="input-group"><input id="date' + index + '" type="text" class="form-control" value="' + element.date + '"><span class="input-group-btn"><button id="getCurrentDateClick' + index + '" class="btn btn-default" type="button">Get current date</button></span></div>');
         $("#getCurrentDateClick" + index).click(() => {
