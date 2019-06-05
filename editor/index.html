@@ -123,8 +123,9 @@
           '<button id="btnRemoveElem' + index + '" class="btn btn-xs btn-danger" style="float: right">X</button>' +
           '</div><div id="singleNews' + index + '" class="panel-body"></div></div>');
         $("#btnRemoveElem" + index).click(() => {
-          input.news.splice(index, 1);
-          drawData(input);
+          var drownData = getDrawnData();
+          drownData.news.splice(index, 1);
+          drawData(drownData);
         });
         $("#singleNews" + index).append('<label>' + 'Date' + ':</label>');
         $("#singleNews" + index).append('<div class="input-group"><input id="date' + index + '" type="text" class="form-control" value="' + element.date + '"><span class="input-group-btn"><button id="getCurrentDateClick' + index + '" class="btn btn-default" type="button">Get current date</button></span></div>');
