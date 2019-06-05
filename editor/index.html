@@ -32,6 +32,8 @@
     <button type="button" id="upload" class="btn btn-primary">⬇</button>
     <button type="button" id="convert" class="btn btn-primary" style="float: right">⬆</button>
     <hr>
+    <label>News:</label>
+    <button id="newsAddButton" class="col-md-12 btn btn-success">Add new +</button>
     <div id="drownData">
 
     </div>
@@ -49,15 +51,38 @@
       drawData(inputJson);
     });
 
+    $("#newsAddButton").click(() => {
+      var inputJson = getDrawnData();
+
+      var newNews = {};
+      newNews.date = '';
+      newNews.header = '';
+      newNews.description = '';
+      inputJson.news.unshift(newNews);
+
+      console.log(inputJson);
+      drawData(inputJson);
+    });
+
     $("#convert").click(() => {
-      var outputJson = JSON.parse($("textarea#inputJson").val());
+      $("#outputJson").val(JSON.stringify(getDrawnData(), null, 4));
+    });
+
+    var formClearJson = ()=>{
+      var toReturn = {};
+      toReturn.news = [];
+      return toReturn;
+    };
+
+    var getDrawnData = () => {
+      var outputJson = $("textarea#inputJson").val() ? JSON.parse($("textarea#inputJson").val()) : formClearJson();
       const arrayList = $("#news > div.panel > div.panel-body").get();
       $("#news > div.panel > div.panel-body").get().forEach((elem, index) => {
         outputJson.news[index] = getSingleNewsObj($(elem).find("input, textarea"), index);
       });
       console.log(outputJson);
-      $("#outputJson").val(JSON.stringify(outputJson, null, 4));
-    });
+      return outputJson;
+    };
 
     var getSingleNewsObj = (elems, index) => {
       var toReturn = {};
@@ -80,7 +105,7 @@
     var drawData = (input) => {
       $("#appendedData").remove();
       $("#drownData").append('<div id="appendedData"></div>');
-      $("#appendedData").append('<label>' + 'News' + ':</label><div id="news" class="col-md-12"><button class="col-md-12 btn btn-success disabled">Add new +</button><hr></div>');
+      $("#appendedData").append('<div id="news" class="col-md-12"><hr></div>');
       input['news'].forEach((element, index) => {
         $("#news").append('<div class="panel panel-default"><div class="panel-header"><span class="badge">' + index + '</span></div><div id="singleNews' + index + '" class="panel-body"></div></div>');
         $("#singleNews" + index).append('<label>' + 'Date' + ':</label>');
