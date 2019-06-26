@@ -123,6 +123,7 @@
             ]
         }
     ],
+    "ytApiKey": "AIzaSyBfRu6_InWAez2APGkjkXAryj8JyKJzzHs",
     "CTA": {
         "btnName": "Call to Action",
         "url": "http://www.zespol.wroc.pl/"
