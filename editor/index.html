@@ -11,69 +11,172 @@
 </head>
 
 <body>
-  <h1>RDZPiT-JSON-Editor</h1>
+  <h1>RDZPiT-JSON-Editor v.0.0.1-alpha</h1>
 
   <div class="col-md-12">
-    <div class="form-group">
-      <label for="comment">Input JSON:</label>
-      <textarea class="form-control" rows="5" id="inputJson"></textarea>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-group">
+          <label for="comment">Input JSON:</label>
+          <textarea class="form-control" rows="5" id="inputJson" style="resize: none;"></textarea>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group">
+          <label for="comment">Output JSON:</label>
+          <textarea onclick="this.select()" class="form-control" rows="5" id="outputJson"
+            style="resize: none;"></textarea>
+        </div>
+      </div>
     </div>
-    <button type="button" id="convert" class="btn btn-primary">⬇</button>
+    <button type="button" id="upload" class="btn btn-primary disabled">⬇</button>
+    <button type="button" id="convert" class="btn btn-primary" style="float: right">⬆</button>
     <hr>
+    <label>News:</label>
+    <button id="newsAddButton" class="col-md-12 btn btn-success">Add new +</button>
     <div id="drownData">
 
     </div>
   </div>
 
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="js/jquery-3.4.1.min.js"></script>
-  <!-- Include all compiled plugins (below), or include individual files as needed -->
   <script src="js/bootstrap.min.js"></script>
 
   <script type="text/javascript">
-    $("#convert").click(function () {
+    const IMAGE_SEPARATOR = '; ';
+
+    $("#inputJson").on('input', () => {
+      if (!$("#inputJson").val()) {
+        $("#upload").addClass('disabled');
+      }
+      else {
+        $("#upload").removeClass('disabled');
+      }
+    });
+
+    $("#upload").click(() => {
       var inputJson = JSON.parse($("textarea#inputJson").val());
       console.log(inputJson);
       drawData(inputJson);
     });
 
+    $("#newsAddButton").click(() => {
+      var inputJson = getDrawnData();
+
+      var newNews = {};
+      newNews.date = '';
+      newNews.header = '';
+      newNews.description = '';
+      inputJson.news.unshift(newNews);
+
+      console.log(inputJson);
+      drawData(inputJson);
+    });
+
+    $("#convert").click(() => {
+      $("#outputJson").val(JSON.stringify(getDrawnData(), null, 4));
+    });
+
+    var formClearJson = () => {
+      var toReturn = {};
+      toReturn.news = [];
+      return toReturn;
+    };
+
+    var getDrawnData = () => {
+      var outputJson = $("textarea#inputJson").val() ? JSON.parse($("textarea#inputJson").val()) : formClearJson();
+      const arrayList = $("#news > div.panel > div.panel-body").get();
+      var newNewsList = [];
+      $("#news > div.panel > div.panel-body").get().forEach((elem, index) => {
+        newNewsList.push(getSingleNewsObj($(elem).find("input, textarea"), index))
+      });
+      outputJson.news = newNewsList;
+      console.log(outputJson);
+      return outputJson;
+    };
+
+    var getSingleNewsObj = (elems, index) => {
+      var toReturn = {};
+      //TODO: Consider using selectors istead of indexes
+      toReturn.date = $(elems[0]).val();
+      toReturn.header = $(elems[1]).val();
+      toReturn.description = $(elems[2]).val().replace(/(?:\r\n|\r|\n)/g, '\n');
+
+      if ($(elems[3]).val()) {
+        toReturn.image = {};
+        var unconcatImage = $(elems[3]).val().split(IMAGE_SEPARATOR);
+        toReturn.image.url = unconcatImage[0];
+        if (unconcatImage[1]) {
+          toReturn.image.link = unconcatImage[1];
+        }
+      }
+      return toReturn;
+    };
+
     var drawData = (input) => {
       $("#appendedData").remove();
       $("#drownData").append('<div id="appendedData"></div>');
-      $("#appendedData").append('<label>' + 'News' + ':</label><div id="news" class="col-md-12"></div>');
-      input['news'].forEach(element => {
-        $("#news").append('<label>' + 'Date' + ':</label>');
-        $("#news").append('<input type="text" class="form-control" value="' + element.date + '">');
-        $("#news").append('<label>' + 'Header' + ':</label>');
-        $("#news").append('<input type="text" class="form-control" value="' + element.header + '">');
-        $("#news").append('<label>' + 'Description' + ':</label>');
-        $("#news").append('<textarea class="form-control" rows="5">' + element.description + '</textarea>');
-        $("#news").append('<label>' + 'Image' + ':</label>' + concatenateNewsImage(element.image));
-        $("#news").append('<div class=""><hr></div>');
+      $("#appendedData").append('<div id="news" class="col-md-12"><hr></div>');
+      input['news'].forEach((element, index) => {
+        $("#news").append('<div class="panel panel-default"><div class="panel-header">' +
+          '<span class="badge">' + index + '</span>' +
+          '<button id="btnRemoveElem' + index + '" class="btn btn-xs btn-danger" style="float: right">X</button>' +
+          '</div><div id="singleNews' + index + '" class="panel-body"></div></div>');
+        $("#btnRemoveElem" + index).click(() => {
+          var drownData = getDrawnData();
+          drownData.news.splice(index, 1);
+          drawData(drownData);
+        });
+        $("#singleNews" + index).append('<label>' + 'Date' + ':</label>');
+        $("#singleNews" + index).append('<div class="input-group"><input id="date' + index + '" type="text" class="form-control" value="' + element.date + '"><span class="input-group-btn"><button id="getCurrentDateClick' + index + '" class="btn btn-default" type="button">Get current date</button></span></div>');
+        $("#getCurrentDateClick" + index).click(() => {
+          $("#date" + index).val(getCurrentDate());
+        });
+        $("#singleNews" + index).append('<label>' + 'Header' + ':</label>');
+        $("#singleNews" + index).append('<input id="header' + index + '" type="text" class="form-control" value="' + returnReplacedEscapedQuotes(element.header) + '">');
+        $("#singleNews" + index).append('<label>' + 'Description' + ':</label>');
+        $("#singleNews" + index).append('<textarea id="description' + index + '" class="form-control" rows="5">' + element.description + '</textarea>');
+        element.image = formImage(element.image);
+        $("#singleNews" + index).append('<label>' + 'Image: URL' + IMAGE_SEPARATOR + 'LINK' + ' (separator:[' + IMAGE_SEPARATOR + '])' +
+          '</label><input id="image' + index + '" type="text" class="form-control" value="' + concatenateImage(element.image) + '">');
+
       });
-
-      // Object.keys(input).forEach(function (item) {
-      //   $("#appendedData").append('<label for="usr">' + item + ':</label><input type="text" class="form-control"></div>');
-      //   console.log(inputJson[item]); // value
-      // });
     };
 
-    var returnRemovedEscapedQuotes = (text) => {
-      // return text.replace(/blue/g, "red");
+    var buildImageAddBtn = (index) => {
+      return '<button id="imageAdd' + index + '" type="button" class="btn btn-success btn-xs">+</button>'
     };
 
-    var concatenateNewsImage = (image) => {
-      var toReturn = '';
-      if (image) {
-        toReturn += '<div class="panel panel-default panel-body">';
-        toReturn += '<label>' + 'URL' + ':</label><input type="text" class="form-control" value="' + image.url + '">';
-        if (image.link) {
-          toReturn += '<label>' + 'Link' + ':</label><input type="text" class="form-control" value="' + image.link + '">';
-        }
-        toReturn += '</div>';
+    var concatenateImage = (image) => {
+      if (!image.link) {
+        return image.url;
       }
+      return image.link + IMAGE_SEPARATOR + image.url;
+    };
 
-      return toReturn;
+    var getCurrentDate = () => {
+      var today = new Date();
+      var dd = String(today.getDate()).padStart(2, '0');
+      var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+      var yyyy = today.getFullYear();
+
+      return dd + '.' + mm + '.' + yyyy;
+    };
+
+    var returnReplacedEscapedQuotes = (text) => {
+      return text.replace(/\"/g, "&quot;");
+    };
+
+    var formImage = (image) => {
+      if (!image) {
+        image = {};
+        image.url = '';
+        image.link = '';
+      }
+      if (!image.link) {
+        image.link = '';
+      }
+      return image;
     };
   </script>
 </body>
