@@ -107,19 +107,108 @@
     ],
     "galleryImages": [
         {
-            "grpName": "Warsztaty tradycyjne - \"Powrót do korzeni - muzyka, taniec, śpiew, polskie tradycje ludowe. II edycja\"",
-            "grpDescription": "Tak bawiliśmy się podczas bezpłatnych weekendowych warsztatów tradycyjnych w ramach projektu \"Powrót do korzeni - muzyka, taniec, śpiew i polskie tradycje ludowe. II edycja\" współfinansowanych ze środków Gminy Wrocław.",
+            "grpName": "Wspomnienia",
+            "grpDescription": "",
             "imagesUrlsList": [
-                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/powrot_do_korzeni_warsztaty8_20190209_1899489964.jpg",
-                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/powrot_do_korzeni_warsztaty7_20190209_1502447523.jpg"
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/user_110_anglia_1973.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/user_166_wroclaw_-_ratusz.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/user_166_wroclaw_-_rynek.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/user_166_drezno.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/user_166_drezno2.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/user_166_na_scenie.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/user_166_grupa_transportowa.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/user_110_marzec_w_karpaczu.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/20101214_1057095996_zespol_wroclaw_-_1.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/20101214_1773040895_zespol_wroclaw_-_2.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/20101214_1357534055_zespol_wroclaw_-_3.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/20101214_1170440771_zespol_wroclaw_-_4.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/20101214_1598395241_zespol_wroclaw_-_5.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/20101214_1722682476_zespol_wroclaw_-_6.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/20100815_1035261231_dscn3650.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/20100815_1774806893_dscn3655.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/user_110_mazury_1970.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/user_110_skalmierzanki.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/user_105_leszek_-_ledan.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/user_105_35_-_lecie.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/user_105_po_koncercie_na_rynku.jpg"
             ]
         },
         {
-            "grpName": "Poznaj foklor, czyli warsztaty na ludowo",
+            "grpName": "Wyjazd zespolowy - Portugalia 2015",
+            "grpDescription": " ",
+            "imagesUrlsList": [
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/galeria_-_portugalia_20152_20160125_1551780385.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/galeria_-_portugalia_20153_20160125_1130194533.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/galeria_-_portugalia_20157_20160125_2085263704.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/galeria_-_portugalia_20158_20160125_1375309744.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/galeria_-_portugalia_20159_20160125_1920749961.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/20160309_1901824464_317.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/20160309_1686112697_318.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/20160309_1471763361_482.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/20160309_1042527659_485.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/20160309_1386660011_441.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/20160309_1082025987_487.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/20160309_1751990762_446.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/20160309_1321912793_516.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/20160309_1946637439_584.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/20160309_1537989018_534.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/20160309_1032195703_328.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/20160309_1983923743_597.jpg"
+            ]
+        },
+        {
+            "grpName": "Festival de Folclore Internacional Alto Minho 2018",
+            "grpDescription": "Wspomnienia ze słonecznej Portugalii, z malowniczego Viana de Castelo położonego tuż nad brzegiem oceanu...",
+            "imagesUrlsList": [
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/20181115_1500841160_viana1.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/20181115_1541302347_viana2.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/20181115_1631481418_viana3.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/20181115_1930454759_viana4.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/20181115_1941591595_viana5.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/20181115_1982108336_viana6.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/20181115_1703732651_viana7.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/20181115_1883387904_viana8.jpg"
+            ]
+        },
+        {
+            "grpName": "\"Poznaj foklor, czyli warsztaty na ludowo\"",
+            "grpDescription": "Fotorelacja z warsztatów tradycyjnych, które odbyły się w Obornikach Śląskich w ramach projektu \"Poznaj folklor, czyli warsztaty na ludowo\", współfinansowanego ze środków Samorządu Województwa Dolnośląskiego.Podczas warsztatów tańczyliśmy i śpiewaliśmy na ludowo, a także graliśmy na tradycyjnych instrumentach i bawiliśmy się w zabawy naszych dziadków.",
             "imagesUrlsList": [
                 "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/warsztaty_tradycyjne_w_obornikach1_20190129_2029365070.jpg",
                 "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/warsztaty_tradycyjne_w_obornikach2_20190129_1173763087.jpg",
-                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/warsztaty_tradycyjne_w_obornikach3_20190129_1963831074.jpg"
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/warsztaty_tradycyjne_w_obornikach3_20190129_1963831074.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/warsztaty_tradycyjne_w_obornikach4_20190129_1588896157.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/warsztaty_tradycyjne_w_obornikach5_20190129_1206012614.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/warsztaty_tradycyjne_w_obornikach6_20190129_1214706202.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/warsztaty_tradycyjne_w_obornikach7_20190129_1764152229.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/warsztaty_tradycyjne_w_obornikach8_20190129_1706810586.jpg"
+            ]
+        },
+        {
+            "grpName": "[2016.11.02] Koncert \"Mały Folklor\" - Oborniki Ślaskie",
+            "grpDescription": "Fotorelacja z koncertu \"Mały Folklor\", który odbył się 2 listopada 2016 w Obornickim Ośrodku Kultury. Koncert odbył sie w ramach „Dolnośląskiego Programu MikroWsparcia Europejskiej Stolicy Kultury 2016”. Został sfinansowany przez Ośrodek Kultury i Sztuki we Wrocławiu (Instytucja Kultury Samorządu Województwa Dolnośląskiego) a także Obornicki Ośrodek Kultury. Fot. Atelier de MoMo",
+            "imagesUrlsList": [
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/20161113_1585142001__mg_6617.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/20161113_1189954009__mg_6623.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/20161113_2037142170__mg_6626.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/20161113_1880868875__mg_6630.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/20161113_1871818673__mg_6631.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/20161113_1345313583__mg_6641.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/20161113_1384605681__mg_6647.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/20161113_2012205725__mg_6659.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/20161113_1608726782__mg_6661.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/20161113_1077556528__mg_6666.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/fotorelacja_maly_folklor_-_oborniki_1_20161113_2097491941.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/fotorelacja_maly_folklor_-_oborniki_2_20161113_1066571300.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/fotorelacja_maly_folklor_-_oborniki_3_20161113_1560746931.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/fotorelacja_maly_folklor_-_oborniki_4_20161113_1534859827.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/fotorelacja_maly_folklor_-_oborniki_5_20161113_1907597005.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/fotorelacja_maly_folklor_-_oborniki_6_20161113_1451415002.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/fotorelacja_maly_folklor_-_oborniki_7_20161113_1775915311.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/fotorelacja_maly_folklor_-_oborniki_8_20161113_1246056062.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/fotorelacja_maly_folklor_-_oborniki_9_20161113_1277405598.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/fotorelacja_maly_folklor_-_oborniki_10_20161113_1201624215.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/fotorelacja_maly_folklor_-_oborniki_11_20161113_1772561835.jpg"
             ]
         },
         {
@@ -134,6 +223,73 @@
                 "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/20181115_1577551747_alencon6.jpg",
                 "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/20181115_2038721811_alencon7.jpg",
                 "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/20181115_2092357655_alencon8.jpg"
+            ]
+        },
+        {
+            "grpName": "Warsztaty tradycyjne - \"Powrót do korzeni - muzyka, taniec, śpiew, polskie tradycje ludowe. II edycja\"",
+            "grpDescription": "Tak bawiliśmy się podczas bezpłatnych weekendowych warsztatów tradycyjnych w ramach projektu \"Powrót do korzeni - muzyka, taniec, śpiew i polskie tradycje ludowe. II edycja\" współfinansowanych ze środków Gminy Wrocław.",
+            "imagesUrlsList": [
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/powrot_do_korzeni_warsztaty8_20190209_1899489964.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/powrot_do_korzeni_warsztaty7_20190209_1502447523.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/powrot_do_korzeni_warsztaty6_20190209_2038748256.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/powrot_do_korzeni_warsztaty5_20190209_1726976985.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/powrot_do_korzeni_warsztaty3_20190209_1780072168.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/powrot_do_korzeni_warsztaty2_20190209_1672494154.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/powrot_do_korzeni_warsztaty1_20190209_1856572280.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/powrot_do_korzeni_warsztaty9_20190209_1761727964.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/powrot_do_korzeni_warsztaty10_20190209_1655739031.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/powrot_do_korzeni_warsztaty11_20190209_1879813110.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/powrot_do_korzeni_warsztaty12_20190209_1125219051.jpg"
+            ]
+        },
+        {
+            "grpName": "[2016.11.15] Koncert edukacyjny dla wrocławskich szkół w Imparcie.",
+            "grpDescription": "Fotorelacja z koncertu edukacyjnego dla wrocławskich szkół, która odbyła się 15 listopada 2016 w Imparcie.Fot. Ksenia P.",
+            "imagesUrlsList": [
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/lekcja_edukacyjna_w_imparcie1_20161117_2007184669.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/lekcja_edukacyjna_w_imparcie2_20161117_2000142413.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/lekcja_edukacyjna_w_imparcie3_20161117_1019168119.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/lekcja_edukacyjna_w_imparcie4_20161117_2040437814.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/lekcja_edukacyjna_w_imparcie5_20161117_1688543338.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/lekcja_edukacyjna_w_imparcie6_20161117_1663572146.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/lekcja_edukacyjna_w_imparcie7_20161117_1585646271.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/lekcja_edukacyjna_w_imparcie8_20161117_1664421497.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/lekcja_edukacyjna_w_imparcie9_20161117_1274647653.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/lekcja_edukacyjna_w_imparcie10_20161117_2059494814.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/lekcja_edukacyjna_w_imparcie11_20161117_1465451405.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/lekcja_edukacyjna_w_imparcie12_20161117_1129999805.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/lekcja_edukacyjna_w_imparcie13_20161117_1507687179.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/lekcja_edukacyjna_w_imparcie14_20161117_1484480502.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/lekcja_edukacyjna_w_imparcie15_20161117_2003944176.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/lekcja_edukacyjna_w_imparcie16_20161117_1219316113.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/lekcja_edukacyjna_w_imparcie17_20161117_1901034161.jpg"
+            ]
+        },
+        {
+            "grpName": "[2016.04.23] Mazowsze i Przyjaciele - koncert w Mateczniku",
+            "grpDescription": "Fot. Jan Drzewiecki",
+            "imagesUrlsList": [
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/20160425_1284965129_mazowsze_i_przyjaciele_3.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/20160425_1552870104_mazowsze_i_przyjaciele_2.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/20160425_1590882749_mazowsze_i_przyjaciele_1.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/20160425_1593504200_mazowsze_i_przyjaciele_4.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/20160425_1079210934_mazowsze_i_przyjaciele_5.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/20160425_1593894439_mazowsze_i_przyjaciele_6.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/20160425_1692634443_mazowsze_i_przyjaciele_7.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/20160425_1145129813_mazowsze_i_przyjaciele_8.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/20160425_1454218622_mazowsze_i_przyjaciele_9.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/20160425_1868019555_mazowsze_i_przyjaciele_10.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/20160425_2054667461_mazowsze_i_przyjaciele_11.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/20160425_1126848180_mazowsze_i_przyjaciele_12.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/20160425_1952802530_mazowsze_i_przyjaciele_13.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/20160425_1387841796_mazowsze_i_przyjaciele_14.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/20160425_1913031831_mazowsze_i_przyjaciele_15.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/20160425_1647778057_mazowsze_i_przyjaciele_16.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/20160425_1129321528_mazowsze_i_przyjaciele_17.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/20160425_1592454514_mazowsze_i_przyjaciele_18.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/20160425_1123624069_mazowsze_i_przyjaciele_19.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/20160425_1913079935_mazowsze_i_przyjaciele_20.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/20160425_1725617201_mazowsze_i_przyjaciele_21.jpg"
             ]
         }
     ],
