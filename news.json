@@ -121,6 +121,20 @@
                 "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/warsztaty_tradycyjne_w_obornikach2_20190129_1173763087.jpg",
                 "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/warsztaty_tradycyjne_w_obornikach3_20190129_1963831074.jpg"
             ]
+        },
+        {
+            "grpName": "Festival des Folklores du Monde Alencon 2018",
+            "grpDescription": "Parę migawek z pięknego Alencon w obiektywie oragnizatorów...",
+            "imagesUrlsList": [
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/20181115_1417798969_alencon1.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/20181115_1164219482_alencon2.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/20181115_1954211833_alencon3.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/20181115_1092098635_alencon4.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/20181115_1513374412_alencon5.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/20181115_1577551747_alencon6.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/20181115_2038721811_alencon7.jpg",
+                "http://zespol.wroc.pl/components/com_ponygallery/img_pictures/originals/20181115_2092357655_alencon8.jpg"
+            ]
         }
     ],
     "ytApiKey": "AIzaSyBfRu6_InWAez2APGkjkXAryj8JyKJzzHs",
